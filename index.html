@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- 検索にヒットさせない -->
+    <meta name="robots" content="noindex" />
+    <!-- サイトのタイトル -->
+    <title>THE LITTLE CAFE</title>
+    <!-- サイトの概要 -->
+    <meta name="description" content="THE LITTLE CAFEについて" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- スタイルシート -->
+    <!-- リセットCSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/destyle.css@1.0.15/destyle.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+
+  <body>
+    <!-- ヘッダー -->
+    <header class="header">
+      <div class="header__inner">
+        <a href="#" class="header__logo-link">
+          <h1 class="header__title">THE LITTLE CAFE</h1>
+        </a>
+        <ul class="header__nav">
+          <li class="header__nav-item">
+            <a href="#menu" class="header__nav-link">MENU</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="#about" class="header__nav-link">ABOUT</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <!-- メイン -->
+    <main class="main">
+      <!-- ファーストビュー -->
+      <div class="fv">
+        <div class="fv__img">
+          <picture>
+            <source srcset="./img/fv-sp.jpg"" media="(max-width: 767px)" />
+            <img src="./img/fv.jpg" alt="THE LITTLE CAFE" />
+          </picture>
+        </div>
+        <p class="fv__text">お好みのブレンドを<br class="sp" />お手軽に</p>
+      </div>
+
+      <!-- メニュー -->
+      <section id="menu" class="wrapper">
+        <div class="inner">
+          <h2 class="section__title">MENU</h2>
+          <div class="card__items">
+            <div class="card__item">
+              <div class="card__img">
+                <picture>
+                  <source
+                    srcset="./img/menu01-sp.jpg"
+                    media="(max-width: 767px)"
+                  />
+                  <img
+                    src="./img/menu-image1.jpg"
+                    alt="やさしさ、ミルクとともに。"
+                  />
+                </picture>
+              </div>
+              <div class="card__body">
+                <h3 class="card__title">カフェラテ（ICE・HOT）</h3>
+                <p class="card__text">
+                  お好みのブレンドコーヒーと<br />
+                  厳選したミルクのカフェラテ
+                </p>
+              </div>
+            </div>
+            <div class="card__item">
+              <div class="card__img">
+                <picture>
+                  <source
+                    srcset="./img/menu02-sp.jpg"
+                    media="(max-width: 767px)"
+                  />
+                  <img
+                    src="./img/menu-image2.jpg"
+                    alt="今日も、コーヒーからはじまる。"
+                  />
+                </picture>
+              </div>
+              <div class="card__body">
+                <h3 class="card__title">コーヒー（ICE・HOT）</h3>
+                <p class="card__text">
+                  お好みの味をブレンドした<br />
+                  コーヒー本来の味を味わえる
+                </p>
+              </div>
+            </div>
+            <div class="card__item">
+              <div class="card__img">
+                <picture>
+                  <source
+                    srcset="./img/menu03-sp.jpg"
+                    media="(max-width: 767px)"
+                  />
+                  <img
+                    src="./img/menu-image3.jpg"
+                    alt="しあわせは、このカップの中に。"
+                  />
+                </picture>
+              </div>
+              <div class="card__body">
+                <h3 class="card__title">カップケーキ（各種）</h3>
+                <p class="card__text">
+                  コーヒーのお供に <br />日替わり常時５種類
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- アバウト -->
+      <section id="about" class="wrapper">
+        <div class="inner">
+          <h2 class="section__title">ABOUT</h2>
+          <div class="about__container">
+            <div class="about__body">
+              <h3 class="about__title">
+                老舗の味をテイクアウトで楽しめる<span class="u-ib"
+                  >新しいカフェスタイル</span
+                >
+              </h3>
+              <p class="about__text">
+                知る人ぞ知る東京銀座の老舗カフェが提供する、移動販売のテイクアウトコーヒーです。<br />
+                「いつもの」がお家でオフィスでお気軽に楽しめます。
+              </p>
+              <div class="button">
+                <a href="#" class="button-link">MORE</a>
+              </div>
+            </div>
+            <div class="about__img">
+              <picture>
+                <source
+                  srcset="./img/about-sp.jpg"
+                  media="(max-width: 767px)"
+                />
+                <img
+                  src="./img/about.jpg"
+                  alt="テイクアウトで、ちょっといい日。"
+                />
+              </picture>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>©︎Copyright0000 THE LITTLE CAFE</p>
+    </footer>
+  </body>
+</html>
